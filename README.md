@@ -8,11 +8,11 @@ A Simple grep-like command-line tool written in C.
 - '-x': invert match
 
 ##Usage
-./grepp [options] pattern
+- s1./grepp [options] pattern
 
 ##Examples
-./grep -nx pattern
-./grep -n -x pattern
+- ./grep -nx pattern
+- ./grep -n -x pattern
 
 ##Future Improvements
 - File Input support
