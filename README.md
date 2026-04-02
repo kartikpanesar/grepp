@@ -8,7 +8,7 @@ A Simple grep-like command-line tool written in C.
 - '-x': invert match
 
 ##Usage
-- s1./grepp [options] pattern
+- ./grepp [options] pattern
 
 ##Examples
 - ./grep -nx pattern
