@@ -19,4 +19,9 @@ A Simple grep-like command-line tool written in C.
 - Case Insensitive search
 - other options 
 
+## How to use  
+1. open up a terminal.  
+2. Run this Command- gcc main.c find_pattern.c options.c get_line.c -o grepp  
+3. Then Try- ls -l | ./grepp -n main.c  
+
 
