@@ -7,6 +7,7 @@ int main(int argc , char* argv[]){
     int n = 0;  // flag for n(line numbers option);
     int x = 0; // flag for x(inversion) option , which output all lines
                // except the pattern.
+    int ins = 0; // flag for case insensitive.
     int count = 0;
 
 
@@ -14,13 +15,20 @@ int main(int argc , char* argv[]){
         printf("Example Usage: grepp -options(optional) pattern\n");
     }
 
-    for(int i=1; i<(argc-1); ++i){
-        options(argv[i], &n, &x);
+    for(int i=1; i<=(argc-2); ++i){
+        options(argv[i], &n, &x, &ins);
     }
 
 
     while(get_line(line)){
-        int matched = find_pattern(line, argv[argc-1]);
+        int matched = 0;
+        if(ins==1){
+            matched = find_pattern_ins(line, argv[argc-1]);
+        }
+        else{
+            matched = find_pattern(line, argv[argc-1]);
+        }
+
         ++count;
         if(n && x){
             if(!matched){
