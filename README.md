@@ -6,17 +6,17 @@ A Simple grep-like command-line tool written in C.
 - Searches for pattern in text
 - '-n': enables Line Numbers
 - '-x': invert match
+- '-i': case insensitive match
 
 ## Usage
 - ./grepp [options] pattern
 
 ## Examples
-- ./grep -nx pattern
+- ./grep -nxi pattern
 - ./grep -n -x pattern
 
 ## Future Improvements
 - File Input support
-- Case Insensitive search
 - other options 
 
 ## How to use  
